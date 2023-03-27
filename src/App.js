@@ -7,6 +7,12 @@ import Budget from './components/Budget';
 
 // Add code to import the other components here under
 import Remaining from './components/Remaining';
+import ExpenseTotal from './components/ExpenseTotal';
+import ExpenseList from './components/ExpenseList';
+import ExpenseItem from './components/ExpenseItem';
+import AllocationForm from './components/AllocationForm';
+
+
 
 import { AppProvider } from './context/AppContext';
 const App = () => {
@@ -24,20 +30,44 @@ const App = () => {
                     }        
 
                     {
-                    /* Add Remaining component here under */
-                                     //Remaining component
-                                     <div className='col-sm'>
-                                     <Remaining />
-                                 </div>
+                        /* Add Remaining component here under */
+                        //Remaining component
+                        <div className='col-sm'>
+                            <Remaining />
+                        </div>
                     }        
 
-                        {/* Add ExpenseTotal component here under */}        
-                       
-                        {/* Add ExpenseList component here under */}         
+                    {
+                        /* Add ExpenseTotal component here under */
+                        //ExpenseTotal component
+                        <div className='col-sm'>
+                            <ExpenseTotal />
+                        </div>
+                    }        
+                    <h3 className='mt-3'>Allocation</h3>
+                    {
+                        /* Add ExpenseList component here under */
+                        <div className='row '>
+                            <div className='col-sm'>
+                                <ExpenseList />
+                            </div>
+                        </div>
 
-                        {/* Add ExpenseItem component here under */}        
+                    }         
 
-                        {/* Add AllocationForm component here under */}        
+                    {
+                        /* Add ExpenseItem component here under */
+                    }        
+
+                    <h3 className='mt-3'>Change allocation</h3>
+                    {
+                        /* Add AllocationForm component here under */
+                        <div className='row mt-3'>
+                            <div className='col-sm'>
+                                <AllocationForm/>
+                            </div>
+                        </div>
+                    }        
 
                 </div>
             </div>
