@@ -1,6 +1,7 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 //Code to import Budget.js
 import Budget from './components/Budget';
@@ -9,7 +10,6 @@ import Budget from './components/Budget';
 import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
-import ExpenseItem from './components/ExpenseItem';
 import AllocationForm from './components/AllocationForm';
 
 
@@ -43,7 +43,22 @@ const App = () => {
                         <div className='col-sm'>
                             <ExpenseTotal />
                         </div>
-                    }        
+                    }   
+
+                    {
+                        /* Select */
+                        <div className='col-sm'>
+                            <div className="input-group select-grp">
+                                <select className="custom-select select-2" id="inputGroupSelect04">
+                                    <option value="$" name="Dollar">$ Dollar</option>
+                                    <option value="£" name="Pound" selected>£ Pound</option>
+                                    <option value="€" name="Euro">€ Euro</option>
+                                    <option value="₹" name="Rupee">₹ Pound</option>
+                                </select>
+                            </div>
+                        </div>
+                    }
+
                     <h3 className='mt-3'>Allocation</h3>
                     {
                         /* Add ExpenseList component here under */
