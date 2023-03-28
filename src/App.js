@@ -49,7 +49,7 @@ const App = () => {
                         /* Select */
                         <div className='col-sm'>
                             <div className="input-group select-grp">
-                                <select className="custom-select select-2" id="inputGroupSelect04">
+                                <select className="custom-select select-2" id="inputGroupSelect04" style={{ height: '50px'}}>
                                     <option value="$" name="Dollar">$ Dollar</option>
                                     <option value="£" name="Pound" selected>£ Pound</option>
                                     <option value="€" name="Euro">€ Euro</option>
